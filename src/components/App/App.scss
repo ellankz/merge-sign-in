@@ -3,3 +3,13 @@
   height: 100%;
   display: flex;
 }
+
+
+.main {
+  padding-left: 80px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 600px;
+}

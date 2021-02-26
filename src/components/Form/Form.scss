@@ -1,0 +1,87 @@
+@import '../../styles/vars';
+
+.form {
+  margin-top: 60px;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+      position: relative;
+    }
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  &__input {
+    border: 1px solid $color-border;
+    border-radius: 8px;
+    display: block;
+    padding: 17px 20px 18px;
+    width: 100%;
+   
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    color: $color-dark-text;
+
+    &[type=password] {
+      letter-spacing: 0.1em;
+    }
+  }
+  
+  &__link-inside-input {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: $color-light-text;
+
+    &:hover {
+      color: $color-dark-text;
+    }
+  }
+}
+
+.button {
+  display: block;
+  color: $color-white;
+  background-color: $color-main;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  line-height: 19.5px;
+  padding: 17px 20px 18px;
+  -webkit-box-shadow: 0px 9px 27px -6px rgba(6,91,234,0.68); 
+  box-shadow: 0px 9px 27px -6px rgba(6,91,234,0.68);
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-button-hover;
+  }
+
+  &:active {
+    -webkit-box-shadow: 0px 4px 27px -6px rgba(6,91,234,0.68); 
+    box-shadow: 0px 4px 27px -6px rgba(6,91,234,0.68);    
+  }
+
+  &:focus {
+    outline-color: $color-dark-text;
+    outline-width: thick;
+    outline-offset: -2px;
+  }
+
+  &:disabled,
+  &[disabled] {
+    background-color: $color-secondary;
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+    cursor: auto;   
+  }
+}

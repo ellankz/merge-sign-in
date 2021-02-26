@@ -1,0 +1,14 @@
+.header {
+  margin-top: 30px;
+  margin-bottom: 112px;
+}
+
+h1.invisible {
+  margin: 0;
+  position: absolute;
+  font-size: 0;
+  z-index: -999;
+  color: transparent;
+  width: 0;
+  height: 0;
+}

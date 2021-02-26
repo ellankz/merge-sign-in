@@ -5,13 +5,14 @@ import Footer from '../Footer/Footer';
 import './App.scss';
 
 function App() {
+  const footerLinks = ['Contact', 'Privacy', 'Terms'];
   return (
     <div className="app">
       <Slider />
       <main className="main">
         <Header />
         <SignIn />
-        <Footer />
+        <Footer links={footerLinks} />
       </main>
     </div>
   );
