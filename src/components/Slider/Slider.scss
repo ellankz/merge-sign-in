@@ -1,12 +1,13 @@
 @import '../../styles/_vars.scss';
 
-
 .slider {
   background-color: $color-main;
   width: 57%;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 
   &::before,
   &::after {
@@ -27,4 +28,24 @@
     background: url('../../assets/images/slider_bg_1.svg') bottom right no-repeat;
     background-size: 81%;
   }
+
+  &__slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__image {
+    max-width: 64%;
+  }
 }
+
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0;
+}
+
+
+
