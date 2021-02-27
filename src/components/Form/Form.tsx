@@ -82,7 +82,7 @@ function Form() {
             <a href="/restore-pass" className="form__link-inside-input">Forgot your password?</a>
           </li>
           <li className="form__list__item">
-            <button type="submit" className="button form__submit" disabled={email === '' || password === '' ? true : false}>Sign in</button>
+            <button type="submit" className="button form__submit" disabled={!passwordComplete || !emailComplete}>Sign in</button>
           </li>
         </ul>
       </form>
