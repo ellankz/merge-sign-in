@@ -41,6 +41,7 @@ h2 {
 a {
   text-decoration: none;
   color: $color-main;
+  transition: color 0.2s linear;
 
   &:hover {
     color: $color-main-darken;

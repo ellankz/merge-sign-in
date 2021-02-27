@@ -53,7 +53,7 @@ function Form() {
           <li className="form__list__item">
             <label htmlFor="mail" className="form__label">
               Email
-              <div className="form__label__error">{emailError}</div>
+              <div className={`form__label__error${emailError.length ? ' active' : ''}`}>{emailError}</div>
             </label>
             <input 
             type="email" 
@@ -68,7 +68,7 @@ function Form() {
           <li className="form__list__item">
             <label htmlFor="pass" className="form__label">
               Password
-              <div className="form__label__error">{passwordError}</div>
+              <div className={`form__label__error${passwordError.length ? ' active' : ''}`}>{passwordError}</div>
             </label>
             <input 
             type="password" 
