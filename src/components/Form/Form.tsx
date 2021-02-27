@@ -73,7 +73,7 @@ function Form() {
             <input 
             type="password" 
             id="pass" 
-            name="user_mail" 
+            name="user_pass" 
             className={`form__input${passwordError.length ? ' form__input_error' : ''}${passwordComplete ? ' form__input_complete' : ''}`}
             onChange={handlePasswordChange}
             onBlur={validatePassword}
