@@ -1,8 +1,7 @@
-import SwiperCore, { Navigation, Pagination, A11y } from 'swiper';
+import SwiperCore, { Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/swiper.scss';
-import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 
@@ -14,7 +13,7 @@ export const importAll = (r: __WebpackModuleApi.RequireContext) => {
 
 const images = importAll(require.context('../../assets/images/slides', false, /\.png/));
 
-SwiperCore.use([Navigation, Pagination, A11y]);
+SwiperCore.use([Pagination, A11y]);
 
 function Slider() {
   
@@ -41,7 +40,6 @@ function Slider() {
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
-        navigation
         pagination={{ clickable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}

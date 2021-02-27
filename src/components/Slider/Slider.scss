@@ -8,6 +8,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  color: $color-white;
 
   &::before,
   &::after {
@@ -39,13 +40,41 @@
 
   &__image {
     max-width: 64%;
+    margin-bottom: 70px;
+    -webkit-box-shadow: 0px 50px 50px 15px rgba(0,46,123,0.6); 
+box-shadow: 0px 50px 50px 15px rgba(0,46,123,0.6);
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    opacity: 0.9;
+  }
+
+  &__description {
+    margin-bottom: 92px;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 0;
+  }
+  
+  .swiper-pagination-bullet {
+    opacity: 0.4;
+    background-color: $color-white;
+  }
+  
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: $color-white;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 22px;
   }
 }
 
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 0;
-}
+
 
 
 
