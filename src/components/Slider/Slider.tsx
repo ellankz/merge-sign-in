@@ -41,8 +41,6 @@ function Slider() {
         spaceBetween={50}
         slidesPerView={1}
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
         className="slider__main"
       >
         {slidesContent.map((slideContent) => (

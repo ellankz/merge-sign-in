@@ -16,7 +16,16 @@
   &__label {
     display: block;
     margin-bottom: 14px;
+    
+    &__error {
+      float: right;
+      color: $color-warning;
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 400;
+    }
   }
+
 
   &__input {
     border: 1px solid $color-border;
@@ -33,6 +42,19 @@
 
     &[type=password] {
       letter-spacing: 0.1em;
+    }
+
+    &:active, &:focus {
+      outline: none;
+      border-color: $color-main;
+    }
+
+    &_error {
+      border-color: $color-warning;
+    }
+
+    &_complete {
+      border-color: $color-success;
     }
   }
   
